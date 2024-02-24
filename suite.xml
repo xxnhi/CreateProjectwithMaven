@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object test example">
+    <parameter name="browserType" value="chrome" />
+    <parameter name="appURL"
+               value="https://anhtester.startkatalyst.com/account/sign-in" />
+
+    <test name="test">
+        <classes>
+            <class name="anhtester.testcase.SignInTest">
+                <methods>
+                    <include name="signIn" />
+                </methods>
+
+                <methods>
+                    <include name="projectTest" />
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
